@@ -32,7 +32,6 @@ Mob Masters
 
 - Code coverage screenshot: `code-coverage.png`
 - Test results: `test-results.png`
-- Mob programming video: *(add YouTube/Vimeo link here)*
 
 ---
 # Gilded Rose starting position in Java
