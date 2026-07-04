@@ -1,3 +1,40 @@
+# Gilded Rose Refactoring Kata
+> SWE 6733 – Emerging Software Engineering Processes
+> Kennesaw State University
+
+## Team Name
+Mob Masters
+
+## Team Members
+
+| Name | Role |
+|------|------|
+| Duane Mitchell | Driver / Developer |
+| Jazmin Johnson | Navigator / Developer |
+| Yamani Barnes | Navigator / Developer |
+
+## Collaboration Tools
+
+| Tool | Purpose | Rationale |
+|------|---------|-----------|
+| Discord | Voice chat and screen sharing | Allows real-time communication and screen sharing during remote mob programming sessions. |
+| GitHub | Version control | Enables collaborative development, code reviews, and version history. |
+| IntelliJ IDEA | Java development | Supports JUnit testing, debugging, refactoring, and code coverage. |
+
+## Mob Programming Workflow
+
+- We meet remotely using Discord.
+- One member acts as the driver while the others act as navigators.
+- We rotate the driver role during the session.
+- Changes are committed to GitHub after team review.
+
+## Assignment Deliverables
+
+- Code coverage screenshot: `code-coverage.png`
+- Test results: `test-results.png`
+- Mob programming video: *(add YouTube/Vimeo link here)*
+
+---
 # Gilded Rose starting position in Java
 
 ## Run the TextTest Fixture from Command-Line
