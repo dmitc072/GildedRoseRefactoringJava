@@ -98,9 +98,9 @@ class GildedRoseTest {
     void sulfurasNeverChangesSellIn(){
         Item[] items = { new Item("Sulfuras, Hand of Ragnaros", 5, 80) };
         GildedRose app = new GildedRose(items);
-    
+
         app.updateQuality();
-    
+
         assertEquals(5, items[0].sellIn);
     }
 
@@ -122,12 +122,23 @@ class GildedRoseTest {
 
     @Test
     void backstagePassesDropToZeroAfterConcert(){
+        Item[] items = { new Item("Backstage passes to a TAFKAL80ETC concert", 0, 20) };
+        GildedRose app = new GildedRose(items);
 
+        app.updateQuality();
+
+        assertEquals(0, items[0].quality);
+        assertEquals(-1, items[0].sellIn);
     }
 
     @Test
     void backstagePassesNeverExceed50(){
+        Item[] items = { new Item("Backstage passes to a TAFKAL80ETC concert", 5, 50) };
+        GildedRose app = new GildedRose(items);
 
+        app.updateQuality();
+
+        assertEquals(50, items[0].quality);
     }
 
 
