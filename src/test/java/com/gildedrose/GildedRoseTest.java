@@ -86,12 +86,22 @@ class GildedRoseTest {
     //Sulfuras
     @Test
     void sulfurasNeverChangesQuality(){
+    Item[] items = { new Item("Sulfuras, Hand of Ragnaros", 5, 80) };
+    GildedRose app = new GildedRose(items);
 
+    app.updateQuality();
+
+    assertEquals(80, items[0].quality);
     }
 
     @Test
     void sulfurasNeverChangesSellIn(){
-
+        Item[] items = { new Item("Sulfuras, Hand of Ragnaros", 5, 80) };
+        GildedRose app = new GildedRose(items);
+    
+        app.updateQuality();
+    
+        assertEquals(5, items[0].sellIn);
     }
 
     //Backstage Passes
