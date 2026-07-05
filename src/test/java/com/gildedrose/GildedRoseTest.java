@@ -51,7 +51,7 @@ class GildedRoseTest {
         assertEquals(-1, items[0].sellIn);
     }
 
-    //Aged Brie
+   //Aged Brie
     @Test
     void agedBrieQualityIncreasesByOne(){
         Item[] items = {new Item("Aged Brie", 10, 3)};
@@ -64,12 +64,23 @@ class GildedRoseTest {
 
     @Test
     void agedBrieQualityNeverExceeds50(){
+        Item[] items = { new Item("Aged Brie", 10, 50) };
+        GildedRose app = new GildedRose(items);
 
+        app.updateQuality();
+
+        assertEquals(50, items[0].quality);
     }
 
     @Test
     void expiredAgedBrieIncreasesByTwo(){
+        Item[] items = { new Item("Aged Brie", 0, 10) };
+        GildedRose app = new GildedRose(items);
 
+        app.updateQuality();
+
+        assertEquals(12, items[0].quality);
+        assertEquals(-1, items[0].sellIn);
     }
 
     //Sulfuras
