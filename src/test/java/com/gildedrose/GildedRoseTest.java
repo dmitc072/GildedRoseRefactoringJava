@@ -109,9 +109,9 @@ class GildedRoseTest {
     void backstagePassesIncreaseByOneWhenSellInGreaterThan10(){
         Item[] items = { new Item("Backstage passes to a TAFKAL80ETC concert", 11, 20) };
         GildedRose app = new GildedRose(items);
-    
+
         app.updateQuality();
-    
+
         assertEquals(21, items[0].quality);
         assertEquals(10, items[0].sellIn);
     }
@@ -120,9 +120,9 @@ class GildedRoseTest {
     void backstagePassesIncreaseByTwoWhenSellInIs10(){
         Item[] items = { new Item("Backstage passes to a TAFKAL80ETC concert", 10, 20) };
         GildedRose app = new GildedRose(items);
-    
+
         app.updateQuality();
-    
+
         assertEquals(22, items[0].quality);
         assertEquals(9, items[0].sellIn);
     }
@@ -131,9 +131,9 @@ class GildedRoseTest {
     void backstagePassesIncreaseByThreeWhenSellInIs5(){
         Item[] items = { new Item("Backstage passes to a TAFKAL80ETC concert", 5, 20) };
         GildedRose app = new GildedRose(items);
-    
+
         app.updateQuality();
-    
+
         assertEquals(23, items[0].quality);
         assertEquals(4, items[0].sellIn);
     }
@@ -160,6 +160,16 @@ class GildedRoseTest {
         assertEquals(50, items[0].quality);
     }
 
+//    @Test
+//    void conjuredItemsDegradeTwiceAsFast(){
+//        Item[] items = {new Item("Conjured Cake", 10,33)};
+//        GildedRose app = new GildedRose(items);
+//
+//        app.updateQuality();
+//
+//        assertEquals(31,items[0].quality);
+//        assertEquals(9,items[0].sellIn);
+//    }
 
 
 }
