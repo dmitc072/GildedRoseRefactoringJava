@@ -28,12 +28,24 @@ Mob Masters
 - We rotate the driver role during the session.
 - Changes are committed to GitHub after team review.
 
+
 ## Assignment Deliverables
 
+### Code Coverage
 - Code coverage screenshot: `code-coverage.png`
+
+### Unit Test Results
 - Test results: `test-results.png`
 
----
+### Mob Programming – Refactoring Session
+Our team collaborated using mob programming to refactor the legacy Gilded Rose code while preserving its existing behavior through continuous unit testing. The refactoring focused on reducing code duplication, simplifying conditional logic, and improving readability while ensuring all tests continued to pass.
+
+**Video:** https://youtu.be/ZmDU2nFe6rQ
+
+### Mob Programming – TDD: Conjured Feature
+Our team used Test-Driven Development (TDD) to implement the new Conjured inventory item. We first wrote failing unit tests, implemented the production code to make the tests pass, verified that Conjured items degrade twice as fast as ordinary items, and confirmed that the complete JUnit test suite passed successfully.
+
+**Video:** https://youtu.be/2QhdJU2_eyA
 # Gilded Rose starting position in Java
 
 ## Run the TextTest Fixture from Command-Line
